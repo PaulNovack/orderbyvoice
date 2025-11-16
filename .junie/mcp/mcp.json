@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "laravel-boost": {
+            "command": "/usr/bin/php8.4",
+            "args": [
+                "/home/pnovack/code-2026/orderbyvoice/artisan",
+                "boost:mcp"
+            ]
+        }
+    }
+}
