@@ -2,6 +2,7 @@ import PasswordController from '@/actions/App/Http/Controllers/Settings/Password
 import InputError from '@/components/input-error';
 import AppLayout from '@/layouts/app-layout';
 import SettingsLayout from '@/layouts/settings/layout';
+import { dashboard } from '@/routes';
 import { type BreadcrumbItem } from '@/types';
 import { Transition } from '@headlessui/react';
 import { Form, Head } from '@inertiajs/react';
@@ -14,6 +15,10 @@ import { Label } from '@/components/ui/label';
 import { edit } from '@/routes/user-password';
 
 const breadcrumbs: BreadcrumbItem[] = [
+    {
+        title: 'Dashboard',
+        href: dashboard().url,
+    },
     {
         title: 'Password settings',
         href: edit().url,
